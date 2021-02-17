@@ -158,10 +158,6 @@ main() {
 
   // if number is null assign this default value
   print(number ??= 100);
-
-  //TERNARY OPERATOR
-  var b = n.num % 2 == 0 ? 'Even' : 'Odd';
-  print('Value of b: $b');
 }
 
 class Num {

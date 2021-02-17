@@ -146,22 +146,11 @@ main() {
   var n = Num();
   var number;
 
-  /*
-    if (n != null) {
+  if (n != null) {
     number = n.num;
-    }
-  */
-  // if number is null assign this value
-  // number = n?.num ?? 0;
+  }
 
   print(number);
-
-  // if number is null assign this default value
-  print(number ??= 100);
-
-  //TERNARY OPERATOR
-  var b = n.num % 2 == 0 ? 'Even' : 'Odd';
-  print('Value of b: $b');
 }
 
 class Num {
