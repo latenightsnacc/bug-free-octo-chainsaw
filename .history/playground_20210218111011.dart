@@ -137,169 +137,33 @@ main() {
     
   */
 
-//---------------------------------------------------------------------------
+  //---------------------------------------------------------------------------
   // OPERATORS
 
   // NULL AWARE OPERATORS
   // (?.), (??), (??=)
 
+  var n = Num();
+  var number;
+
   /*
-      var n = Num();
-      var number;
-
-      if (n != null) {
-      number = n.num;
-      }
-
-      // if number is null assign this value
-        number = n?.num ?? 0;
-
-        print(number);
-
-      // if number is null assign this default value
-        print(number ??= 100);
-    */
-
-  // TERNARY OPERATOR
-  /*
-      var b = n.num % 2 == 0 ? 'Even' : 'Odd';
-      print('Value of b: $b');
-
-    */
-
-//-------------------------------------------------------------------------
-  // TYPE TEST
-  /*
-    var x = 100;
-
-    if (x is int) {
-      print('integer');
-    }
-
-   */
-
-//------------------------------------------------------------------------
-  // CONDITIONAL STATEMENTS
-  // int x = 1;
-  // IF ELSE STATEMENTS
-  /*
-      if (x % 2 == 0) {
-        print('even');
-      } else if (x % 3 == 0) {
-        print('odd');
-      } else {
-        print('confused');
-      }
-    */
-
-  // SWITCH CASE STATEMENTS
-  /*
-    switch (x) {
-    case 0:
-      print('Even');
-      break;
-    case 1:
-      print('Odd');
-      break;
-    default:
-      print('confused');
+    if (n != null) {
+    number = n.num;
     }
   */
+  // if number is null assign this value
+  // number = n?.num ?? 0;
 
-//-----------------------------------------------------------------------------
-  // LOOPING
+  print(number);
 
-  // STANDARD FOR LOOPS
-  /*
-        for (var i = 1; i <= 10; ++i) {
-          print(i);
-        }
-    */
+  // if number is null assign this default value
+  print(number ??= 100);
 
-  // STANDARD FOR IN LOOPS
-  /*
-      var names = ['ani', 'rebs', 'wally'];
-
-      // SHORT VERSION
-      for (var name in names) {
-        print(name);
-      }
-
-      // LONG VERSION
-      for (var x = 0; x < names.length; ++x) {
-        print(x);
-      }
-    */
-  // FOR EACH LOOP (HIGHER ORDER FUNCTION)
-  /*
-      var numbers = [1, 2, 3, 4, 5];
-
-      // USING AN ARROW FUNCTION
-      numbers.forEach((n) => print(n));
-
-      // USING A REGULAR FUNCTION
-      numbers.forEach(printNum);
-     */
-
-  // WHILE LOOP
-  /*
-    int num = 5;
-      while (num > 0) {
-      print(num);
-      num -= 1;
-    }
-    
-    */
-
-  // DO WHILE LOOP
-  /*
-    do {
-    print(num);
-    num -= 1;
-    } while (num > 0);
-    
-  */
-
-  // BREAK AND CONTINUE
-  /*
-      for (var i = 0; i <= 10; ++i) {
-        if (i > 5) break;
-        print(i);
-      }
-      for (var i = 0; i <= 10; ++i) {
-        if (i % 2 == 0) continue;
-        print('Odd: $i');
-      }
-    */
-
-//------------------------------------------------------------------------------------------------------------
-  // COLLECTIONS
-
-  // LISTS
-  /* 
-    List names = ['Jack', 'Jill'];
-    names.forEach((name) => print(name));
-
-    List fruits = ['apple', 'orange', 'mango'];
-    print('Fruits: \n $fruits ');
-
-    // Creates an immutable list
-    List conFruits = const ['apple', 'orange', 'mango'];
-    conFruits[0] = 'banana';
-    print(conFruits);
-  */
+  //TERNARY OPERATOR
+  var b = n.num % 2 == 0 ? 'Even' : 'Odd';
+  print('Value of b: $b');
 }
-//----------------------------------------------------------------------------------------
-// FOR EACH FUNCTION EXAMPLE
-/*
-    void printNum(num) {
-      print(num);
-    }
-   */
 
-// CLASS EXAMPLE
-/*
 class Num {
   int num = 10;
 }
-*/

@@ -137,37 +137,38 @@ main() {
     
   */
 
-//---------------------------------------------------------------------------
+  //---------------------------------------------------------------------------
   // OPERATORS
 
   // NULL AWARE OPERATORS
   // (?.), (??), (??=)
 
   /*
-      var n = Num();
-      var number;
+    var n = Num();
+    var number;
 
-      if (n != null) {
-      number = n.num;
-      }
+    if (n != null) {
+    number = n.num;
+    }
 
-      // if number is null assign this value
-        number = n?.num ?? 0;
+    // if number is null assign this value
+      number = n?.num ?? 0;
 
-        print(number);
+      print(number);
 
-      // if number is null assign this default value
-        print(number ??= 100);
-    */
+    // if number is null assign this default value
+      print(number ??= 100);
+  */
 
+  //------------------------------------------------------------------------
   // TERNARY OPERATOR
   /*
-      var b = n.num % 2 == 0 ? 'Even' : 'Odd';
-      print('Value of b: $b');
+    var b = n.num % 2 == 0 ? 'Even' : 'Odd';
+    print('Value of b: $b');
 
-    */
+  */
 
-//-------------------------------------------------------------------------
+  //-------------------------------------------------------------------------
   // TYPE TEST
   /*
     var x = 100;
@@ -178,7 +179,7 @@ main() {
 
    */
 
-//------------------------------------------------------------------------
+  //------------------------------------------------------------------------
   // CONDITIONAL STATEMENTS
   // int x = 1;
   // IF ELSE STATEMENTS
@@ -261,33 +262,10 @@ main() {
   */
 
   // BREAK AND CONTINUE
-  /*
-      for (var i = 0; i <= 10; ++i) {
-        if (i > 5) break;
-        print(i);
-      }
-      for (var i = 0; i <= 10; ++i) {
-        if (i % 2 == 0) continue;
-        print('Odd: $i');
-      }
-    */
-
-//------------------------------------------------------------------------------------------------------------
-  // COLLECTIONS
-
-  // LISTS
-  /* 
-    List names = ['Jack', 'Jill'];
-    names.forEach((name) => print(name));
-
-    List fruits = ['apple', 'orange', 'mango'];
-    print('Fruits: \n $fruits ');
-
-    // Creates an immutable list
-    List conFruits = const ['apple', 'orange', 'mango'];
-    conFruits[0] = 'banana';
-    print(conFruits);
-  */
+  for (var i = 0; i <= 10; ++i) {
+    if (i > 5) break;
+    print(i);
+  }
 }
 //----------------------------------------------------------------------------------------
 // FOR EACH FUNCTION EXAMPLE

@@ -276,18 +276,13 @@ main() {
   // COLLECTIONS
 
   // LISTS
-  /* 
-    List names = ['Jack', 'Jill'];
-    names.forEach((name) => print(name));
+  /* */
+  List names = ['Jack', 'Jill'];
+  names.forEach((name) => print(name));
 
-    List fruits = ['apple', 'orange', 'mango'];
-    print('Fruits: \n $fruits ');
-
-    // Creates an immutable list
-    List conFruits = const ['apple', 'orange', 'mango'];
-    conFruits[0] = 'banana';
-    print(conFruits);
-  */
+  List fruits = ['apple', 'orange', 'mango'];
+  var fruit = fruits.forEach((f) => print(f));
+  print('Fruits: \n $fruits ');
 }
 //----------------------------------------------------------------------------------------
 // FOR EACH FUNCTION EXAMPLE
