@@ -8,7 +8,7 @@
 // Import dart:io to access input and output
 // import 'dart:io';
 
-void main() {
+main() {
 //------------------------------------------------------------------------------
   /*
     // HOW TO ACCEPT USER INPUT AND DISPLAY THE INPUT TO THE USER
@@ -304,7 +304,7 @@ void main() {
   // SETS => unique collection of a list of items
   /* 
     var halogens = {'fluorine', 'chlorine', 'fluorine'};
-    // Set => Dynamic
+    // Hash Set => Dynamic
     print(halogens.runtimeType);
 
     // Creates an empty dynamic map not set
@@ -319,57 +319,13 @@ void main() {
   */
 
   // MAPS => Collection of items using a key-value pair
-  /*
-      var fruits = {
-    //   Key        Value
-    //   'favorite': 'watermelon',
-    //   'rating': 10
-    // };
-    // Displays the value inserted at this key
-    // print(fruits['rating']);
-
-    // Keys can be integers
-    // var subjects = {1: 'Maths', 2: 'English', 3: 'Biology'};
-    // print(subjects.runtimeType);
-    // print(subjects[1]);
-
-    // Define an Empty Map
-    var favColors = Map();
-    favColors['first'] = 'red';
-    favColors['last'] = 'dunno';
-
-    print(favColors['last']);
-  */
-//----------------------------------------------------------------------------------------
-  // FUNCTIONS
-  // showMsg(square(2));
-  // showMsg('Hello world');
-  // showMsg(cube(1.5));
-  var list = ['banana', 'mango', 'watermelon'];
-  // using a named function
-  // list.forEach(printItem);
-
-  // ANNONYMOUS functions
-  list.forEach((item) => print(item));
-}
-
-// TYPES OF FUNCTIONS PART ONE
-// a 'dynamic' function is a function that returns a value
-dynamic square(var num) {
-  return num * num;
-}
-
-// Arrow Function
-dynamic cube(var num) => num * num * num;
-
-// a 'void' function is a function that does not return a value
-void showMsg(var msg) {
-  print(msg);
-}
-
-// NAMED FUNCTION
-void printItem(item) {
-  print(item);
+  var fruits = {
+    // Key        Value
+    'favorite': 'watermelon',
+    'rating': 10
+  };
+  // Displays the value inserted at this key
+  print(fruits['rating']);
 }
 //----------------------------------------------------------------------------------------
 // FOR EACH FUNCTION EXAMPLE

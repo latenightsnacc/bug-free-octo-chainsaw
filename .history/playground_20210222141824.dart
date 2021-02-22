@@ -346,11 +346,7 @@ void main() {
   // showMsg('Hello world');
   // showMsg(cube(1.5));
   var list = ['banana', 'mango', 'watermelon'];
-  // using a named function
-  // list.forEach(printItem);
-
-  // ANNONYMOUS functions
-  list.forEach((item) => print(item));
+  list.forEach(printItem);
 }
 
 // TYPES OF FUNCTIONS PART ONE

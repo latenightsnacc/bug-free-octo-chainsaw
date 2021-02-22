@@ -342,34 +342,17 @@ void main() {
   */
 //----------------------------------------------------------------------------------------
   // FUNCTIONS
-  // showMsg(square(2));
-  // showMsg('Hello world');
-  // showMsg(cube(1.5));
-  var list = ['banana', 'mango', 'watermelon'];
-  // using a named function
-  // list.forEach(printItem);
-
-  // ANNONYMOUS functions
-  list.forEach((item) => print(item));
+  showMsg(square(2));
 }
 
-// TYPES OF FUNCTIONS PART ONE
 // a 'dynamic' function is a function that returns a value
 dynamic square(var num) {
   return num * num;
 }
 
-// Arrow Function
-dynamic cube(var num) => num * num * num;
-
 // a 'void' function is a function that does not return a value
 void showMsg(var msg) {
   print(msg);
-}
-
-// NAMED FUNCTION
-void printItem(item) {
-  print(item);
 }
 //----------------------------------------------------------------------------------------
 // FOR EACH FUNCTION EXAMPLE
