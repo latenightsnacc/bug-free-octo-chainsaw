@@ -342,20 +342,17 @@ void main() {
   */
 //----------------------------------------------------------------------------------------
   // FUNCTIONS
-  /* 
-    // showMsg(square(2));
-    // showMsg('Hello world');
-    // showMsg(cube(1.5));
-    var list = ['banana', 'mango', 'watermelon'];
-    // using a named function
-    // list.forEach(printItem);
+  // showMsg(square(2));
+  // showMsg('Hello world');
+  // showMsg(cube(1.5));
+  var list = ['banana', 'mango', 'watermelon'];
+  // using a named function
+  // list.forEach(printItem);
 
-    // ANNONYMOUS functions
-    // forEach is a higher order function because it can take other functions as parameters
-    list.forEach((item) {
-      print(item);
-    });
-  */
+  // ANNONYMOUS functions
+  list.forEach((item) {
+    print(item);
+  });
 }
 
 // TYPES OF FUNCTIONS PART ONE
