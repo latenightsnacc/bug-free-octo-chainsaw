@@ -146,23 +146,10 @@ void letVerifyTheValue(var val) {
     valueVerification = mustGreaterThanZero(val);
   } catch (e) {
     print(e);
-  } finally {
-    if (valueVerification == null) {
-      print('Value is not accepted');
-    } else {
-      print('Value verified: $valueVerification');
-    }
-  }
+  } finally {}
 }
 
 void main() {
-  // works just fine
-  letVerifyTheValue(10);
-
-  // throws an exception
-  letVerifyTheValue(-1);
-
-  // letVerifyTheValue(); Cannot be null, gives a runtime error
   /*
 //------------------------------------------------------------------------------
   // CLASS EXAMPLE FIVE - GETTERS AND SETTERS

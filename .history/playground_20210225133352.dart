@@ -117,59 +117,16 @@ class X extends Y {
     return val * val;
   }
 }
-//------------------------------------------------------------------------------
+  */
 // CLASS EXAMPLE FIVE - GETTERS AND SETTERS => SPECIAL METHODS THAT PROVIDE READ AND WRITE ACCESS TO A CLASS PROPERTIES
 class Rectangle {
   num left, top, width, height;
 
-  Rectangle(this.left, this.top, this.width, this.height);
-
-  // Define two calculated properties: right and bottom.
-  num get right => left + width;
-  set right(num value) => left = value - width;
-  num get bottom => top + height;
-  set bottom(num value) => top = value - height;
-}
-  */
-// EXCEPTION HANDLING
-int mustGreaterThanZero(int val) {
-  if (val <= 0) {
-    throw Exception('Value must be greater than zero');
-  }
-  return val;
-}
-
-void letVerifyTheValue(var val) {
-  var valueVerification;
-
-  try {
-    valueVerification = mustGreaterThanZero(val);
-  } catch (e) {
-    print(e);
-  } finally {
-    if (valueVerification == null) {
-      print('Value is not accepted');
-    } else {
-      print('Value verified: $valueVerification');
-    }
-  }
+  Rectangle(this.left, this.top, this.width, this.height)
 }
 
 void main() {
-  // works just fine
-  letVerifyTheValue(10);
-
-  // throws an exception
-  letVerifyTheValue(-1);
-
-  // letVerifyTheValue(); Cannot be null, gives a runtime error
   /*
-//------------------------------------------------------------------------------
-  // CLASS EXAMPLE FIVE - GETTERS AND SETTERS
-  var rect = Rectangle(3, 4, 20, 15);
-  print(rect.left);
-  rect.right = 12;
-  print(rect.left);
 //------------------------------------------------------------------------------
   // CLASS EXAMPLE FOUR - METHOD OVERRIDING 
   var bu = X('bubu');

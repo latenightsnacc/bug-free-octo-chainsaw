@@ -56,8 +56,10 @@
   // possible to change it at run time
   X(this.name);
 }
-//------------------------------------------------------------------------------
-  // CLASS EXAMPLE THREE - INHERITANCE
+   
+  */
+
+// CLASS EXAMPLE THREE
 class Vehicle {
   String model;
   int year;
@@ -68,7 +70,7 @@ class Vehicle {
   }
 
   void showCarModelYear() {
-    print('Car Details: \n\tCar model: $model \n\tCar year: $year');
+    print('Car model: $model \n Car year: $year');
   }
 }
 
@@ -80,106 +82,14 @@ class Car extends Vehicle {
 
   void showCarDetails() {
     super.showCarModelYear();
-    var carPrice = this.price;
-    print('\tCar price: $carPrice');
-  }
-}
-//------------------------------------------------------------------------------
-// CLASS EXAMPLE FOUR - METHOD OVERRIDING
-class Y {
-  String name;
-
-  Y(this.name);
-
-  void displayName() {
-    print(name);
-  }
-
-  dynamic sqaure(num val) {
-    return val * val;
-  }
-}
-
-class X extends Y {
-  X(String name) : super(name);
-
-  // this method overrides the earlier method because it has the same name
-  // use '@override' when you do not have control of Super classes implementation
-  // will still work without including the '@override' since it is just a safety measure
-  // if a method with the same name does not exist in the Super class, then do not include the '@override' as it will cause an error
-  @override
-  void displayName() {
-    print('Hello $name!');
-  }
-
-  // Not using  '@override'
-  dynamic sqaure(num val) {
-    return val * val;
-  }
-}
-//------------------------------------------------------------------------------
-// CLASS EXAMPLE FIVE - GETTERS AND SETTERS => SPECIAL METHODS THAT PROVIDE READ AND WRITE ACCESS TO A CLASS PROPERTIES
-class Rectangle {
-  num left, top, width, height;
-
-  Rectangle(this.left, this.top, this.width, this.height);
-
-  // Define two calculated properties: right and bottom.
-  num get right => left + width;
-  set right(num value) => left = value - width;
-  num get bottom => top + height;
-  set bottom(num value) => top = value - height;
-}
-  */
-// EXCEPTION HANDLING
-int mustGreaterThanZero(int val) {
-  if (val <= 0) {
-    throw Exception('Value must be greater than zero');
-  }
-  return val;
-}
-
-void letVerifyTheValue(var val) {
-  var valueVerification;
-
-  try {
-    valueVerification = mustGreaterThanZero(val);
-  } catch (e) {
-    print(e);
-  } finally {
-    if (valueVerification == null) {
-      print('Value is not accepted');
-    } else {
-      print('Value verified: $valueVerification');
-    }
+    print(this.price);
   }
 }
 
 void main() {
-  // works just fine
-  letVerifyTheValue(10);
-
-  // throws an exception
-  letVerifyTheValue(-1);
-
-  // letVerifyTheValue(); Cannot be null, gives a runtime error
-  /*
-//------------------------------------------------------------------------------
-  // CLASS EXAMPLE FIVE - GETTERS AND SETTERS
-  var rect = Rectangle(3, 4, 20, 15);
-  print(rect.left);
-  rect.right = 12;
-  print(rect.left);
-//------------------------------------------------------------------------------
-  // CLASS EXAMPLE FOUR - METHOD OVERRIDING 
-  var bu = X('bubu');
-  bu.displayName();
-//------------------------------------------------------------------------------
-  // CLASS EXAMPLE THREE - INHERITANCE
   var honda = Car('Honda Accord', 2014, 35000);
   honda.showCarDetails();
-
-//------------------------------------------------------------------------------
+  /*
     // CLASS EXAMPLE TWO USING FINAL AND CONST WITHIN A CLASS 
     var x = X('Debs');
     print(x.name);

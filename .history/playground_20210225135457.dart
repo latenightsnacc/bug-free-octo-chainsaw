@@ -159,10 +159,9 @@ void main() {
   // works just fine
   letVerifyTheValue(10);
 
-  // throws an exception
   letVerifyTheValue(-1);
 
-  // letVerifyTheValue(); Cannot be null, gives a runtime error
+  letVerifyTheValue(0);
   /*
 //------------------------------------------------------------------------------
   // CLASS EXAMPLE FIVE - GETTERS AND SETTERS

@@ -10,216 +10,34 @@
 
 //------------------------------------------------------------------------------
 // CLASSES => Blueprint of an object
-/*
-  // CLASS EXAMPLE ONE 
-    class Person {
-    String name;
-    int age;
-
-  // DEFAULT CONSTRUCTOR
-    //This is a constructor; a method without a return type
-    // You have to use the class name as the constructor name
-    // It is automatically called when you instantiate an object
-    Person(String name, [int age = 18]) {
-      this.name = name;
-      this.age = age;
-    }
-
-    // shorter construction value initiation
-    // Person(this.name, [this.age = 18]);
-
-  // NAMED CONSTRUCTOR
-    Person.guest() {
-      name = 'Timble';
-      age = 26;
-    }
-    // METHOD => A FUNCTION DEFINED IN A CLASS
-    void showDetails() {
-      print('My name is $name and I am $age years old!');
-    }
-  }
-//------------------------------------------------------------------------------
-// CLASS EXAMPLE TWO USING FINAL AND CONST WITHIN A CLASS
-
-    class X {
-  // final keyword is used to create an immutable variable that cannot be changed after initialization
-  // it is a runtime constant => can be changed at run time
-  // this is an object property
-  final name; // type will be defined by inferred value
-
-  // const is a compile time constant => cannot be changed at runtime
-  // to use 'const' within a class, you must include the 'static' keyword before the 'const'
-  // hence this is a class property and can only be accessed using the class name
-  static const int age = 18;
-
-  // You can use the constructor to change the value of the 'final' variable
-  // possible to change it at run time
-  X(this.name);
-}
-//------------------------------------------------------------------------------
-  // CLASS EXAMPLE THREE - INHERITANCE
-class Vehicle {
-  String model;
-  int year;
-
-  Vehicle(this.model, this.year) {
-    print(this.model);
-    print(this.year);
-  }
-
-  void showCarModelYear() {
-    print('Car Details: \n\tCar model: $model \n\tCar year: $year');
-  }
-}
-
-// Car class inherits the Vehicle class
-class Car extends Vehicle {
-  double price;
-
-  Car(String model, int year, this.price) : super(model, year);
-
-  void showCarDetails() {
-    super.showCarModelYear();
-    var carPrice = this.price;
-    print('\tCar price: $carPrice');
-  }
-}
-//------------------------------------------------------------------------------
-// CLASS EXAMPLE FOUR - METHOD OVERRIDING
-class Y {
+class Person {
   String name;
+  int age;
 
-  Y(this.name);
-
-  void displayName() {
-    print(name);
+  //This is a constructor; a method without a return type
+  // You have to use the class name as the constructor name
+  // It is automatically called when you instantiate an object
+  Person(String name, [int age = 18]) {
+    this.name = name;
+    this.age = age;
   }
 
-  dynamic sqaure(num val) {
-    return val * val;
-  }
-}
-
-class X extends Y {
-  X(String name) : super(name);
-
-  // this method overrides the earlier method because it has the same name
-  // use '@override' when you do not have control of Super classes implementation
-  // will still work without including the '@override' since it is just a safety measure
-  // if a method with the same name does not exist in the Super class, then do not include the '@override' as it will cause an error
-  @override
-  void displayName() {
-    print('Hello $name!');
-  }
-
-  // Not using  '@override'
-  dynamic sqaure(num val) {
-    return val * val;
-  }
-}
-//------------------------------------------------------------------------------
-// CLASS EXAMPLE FIVE - GETTERS AND SETTERS => SPECIAL METHODS THAT PROVIDE READ AND WRITE ACCESS TO A CLASS PROPERTIES
-class Rectangle {
-  num left, top, width, height;
-
-  Rectangle(this.left, this.top, this.width, this.height);
-
-  // Define two calculated properties: right and bottom.
-  num get right => left + width;
-  set right(num value) => left = value - width;
-  num get bottom => top + height;
-  set bottom(num value) => top = value - height;
-}
-  */
-// EXCEPTION HANDLING
-int mustGreaterThanZero(int val) {
-  if (val <= 0) {
-    throw Exception('Value must be greater than zero');
-  }
-  return val;
-}
-
-void letVerifyTheValue(var val) {
-  var valueVerification;
-
-  try {
-    valueVerification = mustGreaterThanZero(val);
-  } catch (e) {
-    print(e);
-  } finally {
-    if (valueVerification == null) {
-      print('Value is not accepted');
-    } else {
-      print('Value verified: $valueVerification');
-    }
+  // METHOD => A FUNCTION DEFINED IN A CLASS
+  void showDetails() {
+    print('My name is $name and I am $age years old!');
   }
 }
 
 void main() {
-  // works just fine
-  letVerifyTheValue(10);
-
-  // throws an exception
-  letVerifyTheValue(-1);
-
-  // letVerifyTheValue(); Cannot be null, gives a runtime error
-  /*
-//------------------------------------------------------------------------------
-  // CLASS EXAMPLE FIVE - GETTERS AND SETTERS
-  var rect = Rectangle(3, 4, 20, 15);
-  print(rect.left);
-  rect.right = 12;
-  print(rect.left);
-//------------------------------------------------------------------------------
-  // CLASS EXAMPLE FOUR - METHOD OVERRIDING 
-  var bu = X('bubu');
-  bu.displayName();
-//------------------------------------------------------------------------------
-  // CLASS EXAMPLE THREE - INHERITANCE
-  var honda = Car('Honda Accord', 2014, 35000);
-  honda.showCarDetails();
-
-//------------------------------------------------------------------------------
-    // CLASS EXAMPLE TWO USING FINAL AND CONST WITHIN A CLASS 
-    var x = X('Debs');
-    print(x.name);
-
-    // does not work because age is a class property
-    // print(x.age);
-
-    // works because age is accessed using the class name
-    print(X.age);
-
-    X y = X('jill');
-    print(y.name);
-
-    // FINAL AND CONST OUTSIDE A CLASS
-    final discount =
-        10; // the type of variable is defined by the value assigned (TYPE INFERRENCE)
-    const amount = 3000;
-
-    print(discount);
-    print(amount);
-
-    // discount = 20; => CANNOT BE CHANGED AFTER INITIALIZATION
-    // amount = 0; => ALSO CANNOT BE CHANGED AFTER INITIALIZATION
-   */
-
-//--------------------------------------------------------------------------------
-  // CLASS EXAMPLE ONE
   // works just fine
   // var newPerson = new Person();
   // newPerson.name = 'Deborah Egonu';
   // newPerson.age = 24;
   // newPerson.showDetails();
 
-  // default constructor example
-  /* Person newPerson = Person('Deborah Egonu', 23); // object instantiation
-  newPerson.showDetails(); */
-
-  // named constructor example
-  /* var newPerson2 = Person.guest();
-  newPerson2.showDetails(); */
+  // recommended usage
+  Person newPerson = Person('Deborah Egonu', 23); // object instantiation
+  newPerson.showDetails();
 }
 // THE BEGINNING----------------------------------------------------------------
 // void main() {

@@ -134,35 +134,12 @@ class Rectangle {
 // EXCEPTION HANDLING
 int mustGreaterThanZero(int val) {
   if (val <= 0) {
-    throw Exception('Value must be greater than zero');
+    throw Exception('Value must be greater than 0');
   }
   return val;
 }
 
-void letVerifyTheValue(var val) {
-  var valueVerification;
-
-  try {
-    valueVerification = mustGreaterThanZero(val);
-  } catch (e) {
-    print(e);
-  } finally {
-    if (valueVerification == null) {
-      print('Value is not accepted');
-    } else {
-      print('Value verified: $valueVerification');
-    }
-  }
-}
-
 void main() {
-  // works just fine
-  letVerifyTheValue(10);
-
-  // throws an exception
-  letVerifyTheValue(-1);
-
-  // letVerifyTheValue(); Cannot be null, gives a runtime error
   /*
 //------------------------------------------------------------------------------
   // CLASS EXAMPLE FIVE - GETTERS AND SETTERS
