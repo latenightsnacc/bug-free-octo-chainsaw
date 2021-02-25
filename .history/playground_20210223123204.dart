@@ -8,35 +8,16 @@
 // Import dart:io to access input and output
 // import 'dart:io';
 
-//------------------------------------------------------------------------------
-// CLASSES => Blueprint of an object
-class Person {
-  String name;
-  int age;
-
-  // METHOD => A FUNCTION DEFINED IN A CLASS
-  void showDetails() {
-    print('My name is $name and I am $age years old!');
-  }
-}
-
 void main() {
-  var newPerson = new Person();
-  newPerson.name = 'Deborah Egonu';
-  newPerson.age = 24;
-  newPerson.showDetails();
-}
-// THE BEGINNING----------------------------------------------------------------
-// void main() {
 //------------------------------------------------------------------------------
-/*
+  /*
     // HOW TO ACCEPT USER INPUT AND DISPLAY THE INPUT TO THE USER
     stdout.writeln('What is your name: ?');
     String name = stdin.readLineSync();
     print('My name is $name');
   */
 
-/*
+  /*
     // TYPES OF VARIABLES
        int
        double
@@ -45,7 +26,7 @@ void main() {
        bool
   */
 
-/*
+  /*
     // TYPES OF VARIABLES USAGE AND EXAMPLES
 
       // INT
@@ -82,8 +63,8 @@ void main() {
 
    */
 
-//----------------------------------------------------------------
-/*
+  //----------------------------------------------------------------
+  /*
     // TYPES OF STRINGS AND SPECIAL CHARACTERS
   var s1 = 'Single quotes work.';
   var s2 = "So does double quotes";
@@ -157,12 +138,12 @@ void main() {
   */
 
 //---------------------------------------------------------------------------
-// OPERATORS
+  // OPERATORS
 
-// NULL AWARE OPERATORS
-// (?.), (??), (??=)
+  // NULL AWARE OPERATORS
+  // (?.), (??), (??=)
 
-/*
+  /*
       var n = Num();
       var number;
 
@@ -179,16 +160,16 @@ void main() {
         print(number ??= 100);
     */
 
-// TERNARY OPERATOR
-/*
+  // TERNARY OPERATOR
+  /*
       var b = n.num % 2 == 0 ? 'Even' : 'Odd';
       print('Value of b: $b');
 
     */
 
 //-------------------------------------------------------------------------
-// TYPE TEST
-/*
+  // TYPE TEST
+  /*
     var x = 100;
 
     if (x is int) {
@@ -198,10 +179,10 @@ void main() {
    */
 
 //------------------------------------------------------------------------
-// CONDITIONAL STATEMENTS
-// int x = 1;
-// IF ELSE STATEMENTS
-/*
+  // CONDITIONAL STATEMENTS
+  // int x = 1;
+  // IF ELSE STATEMENTS
+  /*
       if (x % 2 == 0) {
         print('even');
       } else if (x % 3 == 0) {
@@ -211,8 +192,8 @@ void main() {
       }
     */
 
-// SWITCH CASE STATEMENTS
-/*
+  // SWITCH CASE STATEMENTS
+  /*
     switch (x) {
     case 0:
       print('Even');
@@ -226,17 +207,17 @@ void main() {
   */
 
 //-----------------------------------------------------------------------------
-// LOOPING
+  // LOOPING
 
-// STANDARD FOR LOOPS
-/*
+  // STANDARD FOR LOOPS
+  /*
         for (var i = 1; i <= 10; ++i) {
           print(i);
         }
     */
 
-// STANDARD FOR IN LOOPS
-/*
+  // STANDARD FOR IN LOOPS
+  /*
       var names = ['ani', 'rebs', 'wally'];
 
       // SHORT VERSION
@@ -249,8 +230,8 @@ void main() {
         print(x);
       }
     */
-// FOR EACH LOOP (HIGHER ORDER FUNCTION)
-/*
+  // FOR EACH LOOP (HIGHER ORDER FUNCTION)
+  /*
       var numbers = [1, 2, 3, 4, 5];
 
       // USING AN ARROW FUNCTION
@@ -260,8 +241,8 @@ void main() {
       numbers.forEach(printNum);
      */
 
-// WHILE LOOP
-/*
+  // WHILE LOOP
+  /*
     int num = 5;
       while (num > 0) {
       print(num);
@@ -270,8 +251,8 @@ void main() {
     
     */
 
-// DO WHILE LOOP
-/*
+  // DO WHILE LOOP
+  /*
     do {
     print(num);
     num -= 1;
@@ -279,8 +260,8 @@ void main() {
     
   */
 
-// BREAK AND CONTINUE
-/*
+  // BREAK AND CONTINUE
+  /*
       for (var i = 0; i <= 10; ++i) {
         if (i > 5) break;
         print(i);
@@ -292,10 +273,10 @@ void main() {
     */
 
 //------------------------------------------------------------------------------------------------------------
-// COLLECTIONS
+  // COLLECTIONS
 
-// LISTS
-/* 
+  // LISTS
+  /* 
     List names = ['Jack', 'Jill'];
     names.forEach((name) => print(name));
 
@@ -320,8 +301,8 @@ void main() {
     var names2 = [...names]
   */
 
-// SETS => unique collection of a list of items
-/* 
+  // SETS => unique collection of a list of items
+  /* 
     var halogens = {'fluorine', 'chlorine', 'fluorine'};
     // Set => Dynamic
     print(halogens.runtimeType);
@@ -337,8 +318,8 @@ void main() {
     print(bikes.runtimeType);
   */
 
-// MAPS => Collection of items using a key-value pair
-/*
+  // MAPS => Collection of items using a key-value pair
+  /*
       var fruits = {
     //   Key        Value
     //   'favorite': 'watermelon',
@@ -348,20 +329,20 @@ void main() {
     // print(fruits['rating']);
 
     // Keys can be integers
-        var subjects = {1: 'Maths', 2: 'English', 3: 'Biology'};
-        print(subjects.runtimeType);
-        print(subjects[1]);
+    // var subjects = {1: 'Maths', 2: 'English', 3: 'Biology'};
+    // print(subjects.runtimeType);
+    // print(subjects[1]);
 
     // Define an Empty Map
-      var favColors = Map();
-      favColors['first'] = 'red';
-      favColors['last'] = 'dunno';
+    var favColors = Map();
+    favColors['first'] = 'red';
+    favColors['last'] = 'dunno';
 
     print(favColors['last']);
   */
 //----------------------------------------------------------------------------------------
-// FUNCTIONS
-/* 
+  // FUNCTIONS
+  /* 
     // showMsg(square(2));
     // showMsg('Hello world');
     // showMsg(cube(1.5));
@@ -382,8 +363,8 @@ void main() {
     // EXAMPLE OF OPTIONAL ARGUMENT/ DEFAULT ARGUMENT
       print(add(10));
   */
-//}
-//-----------------------------------------------------------------------------------------
+}
+
 // TYPES OF FUNCTIONS
 /*
 // a 'dynamic' function is a function that returns a value
@@ -404,13 +385,12 @@ void printItem(item) {
   print(item);
 }
  */
-//-------------------------------------------------------------------------------------
+
 // TYPES OF PARAMETERS
 /*
 // POSITIONAL PARAMETER/ARGUMENT
 dynamic sum(var num1, var num2) => num1 + num2;
-// OPTIONAL POSTIONAL ARGUMENT/PARAMETER
-dynamic sum(var num1, [var num2]) => num1 + (num2 ?? 0);
+dynamic sum(var num1, [var num2]) => num1 + num2 ?? 0;
 
 // NAMED PARAMETER/ ARGUMENT => OPTIONAL BY DEFAULT
 dynamic add(var val1, {var val2}) => val1 + (val2 ?? 0);

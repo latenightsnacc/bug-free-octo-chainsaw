@@ -15,16 +15,7 @@ class Person {
   int age;
 
   // METHOD => A FUNCTION DEFINED IN A CLASS
-  void showDetails() {
-    print('My name is $name and I am $age years old!');
-  }
-}
-
-void main() {
-  var newPerson = new Person();
-  newPerson.name = 'Deborah Egonu';
-  newPerson.age = 24;
-  newPerson.showDetails();
+  void showDetails() {}
 }
 // THE BEGINNING----------------------------------------------------------------
 // void main() {
@@ -348,14 +339,14 @@ void main() {
     // print(fruits['rating']);
 
     // Keys can be integers
-        var subjects = {1: 'Maths', 2: 'English', 3: 'Biology'};
-        print(subjects.runtimeType);
-        print(subjects[1]);
+    // var subjects = {1: 'Maths', 2: 'English', 3: 'Biology'};
+    // print(subjects.runtimeType);
+    // print(subjects[1]);
 
     // Define an Empty Map
-      var favColors = Map();
-      favColors['first'] = 'red';
-      favColors['last'] = 'dunno';
+    var favColors = Map();
+    favColors['first'] = 'red';
+    favColors['last'] = 'dunno';
 
     print(favColors['last']);
   */
