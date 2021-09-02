@@ -2,9 +2,7 @@
 // (?.), (??), (??=)
 
 class Num {
-  //Gives an error because int cannot be null
-  // int num1;
-  var num1;
+  int num1;
 }
 
 main() {
