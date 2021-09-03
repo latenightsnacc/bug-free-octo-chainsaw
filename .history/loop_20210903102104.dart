@@ -1,24 +1,20 @@
 void main() {
   var names = ['debs', 'val', 'tim'];
+  // 5 kinds of loop
   int num = 5;
 
-  // 5 kinds of loop
   // do while loop
   do {
     print(num);
     num -= 1;
-    while (num > 0) {
-      ;
-    }
+    while (num > 0);
   }
-
   // while loop
   while (num > 0);
   {
     print(num);
     num -= 1;
   }
-
   // forEach loop
   names.forEach((n) => print(n));
 

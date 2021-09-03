@@ -1,4 +1,5 @@
 void main() {
+
   var names = ['debs', 'val', 'tim'];
   int num = 5;
 
@@ -7,14 +8,11 @@ void main() {
   do {
     print(num);
     num -= 1;
-    while (num > 0) {
-      ;
-    }
-  }
+    while (num > 0);
+  } 
 
   // while loop
-  while (num > 0);
-  {
+  while (num > 0) {
     print(num);
     num -= 1;
   }
