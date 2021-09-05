@@ -1,12 +1,14 @@
 void main() {
   var names = ['debs', 'val', 'tim'];
-  // int num = 5;
+  int num = 5;
 
   // 5 kinds of loop
   // do while loop
-  // do {
-  //   print(num);
-  // } while (num > 0 && num < 10);
+  do {
+    print(num);
+    num -= 1;
+    while (num > 0);
+  }
 
   // while loop
   // while(names.length > 0){
@@ -25,6 +27,5 @@ void main() {
   // Standard For Loop
   for (var i = 0; i <= names.length; i++) {
     print(names[i]);
-    if (names[i] == 'tim') break;
   }
 }

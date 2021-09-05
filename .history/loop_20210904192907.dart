@@ -25,6 +25,5 @@ void main() {
   // Standard For Loop
   for (var i = 0; i <= names.length; i++) {
     print(names[i]);
-    if (names[i] == 'tim') break;
   }
 }
