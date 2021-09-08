@@ -11,5 +11,7 @@ void main() {
 
   print(gifts);
 
-  print(gifts['first']);
+  for (var gift in gifts) {
+    print(gift);
+  }
 }

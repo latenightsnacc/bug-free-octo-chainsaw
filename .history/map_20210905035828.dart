@@ -10,6 +10,4 @@ void main() {
   };
 
   print(gifts);
-
-  print(gifts['first']);
 }
