@@ -5,7 +5,7 @@ void main() {
   showOutput(sum(2, 24));
 
   showOutput(product(num1: 3));
-  showOutput(product(num1: 3, num2: 5));
+  showOutput(product(num1: 3, num2: 5);
 }
 
 // Function

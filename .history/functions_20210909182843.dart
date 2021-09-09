@@ -2,10 +2,9 @@ void main() {
   showOutput(cube(3));
   showOutput(cube(33.3));
 
-  showOutput(sum(2, 24));
+  sum(2, 24);
 
-  showOutput(product(num1: 3));
-  showOutput(product(num1: 3, num2: 5));
+  product(num1: 3);
 }
 
 // Function
@@ -24,4 +23,4 @@ void showOutput(var output) {
 dynamic sum(var num1, [var num2]) => num1 + num2;
 
 // named arguments / optional positional argument
-dynamic product({var num1, var num2 = 0}) => num1 + num2;
+dynamic product({var num1, var num2}) => num1 + num2;

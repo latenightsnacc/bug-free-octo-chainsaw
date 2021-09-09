@@ -2,10 +2,10 @@ void main() {
   showOutput(cube(3));
   showOutput(cube(33.3));
 
-  showOutput(sum(2, 24));
+  sum(2, 24);
 
-  showOutput(product(num1: 3));
-  showOutput(product(num1: 3, num2: 5));
+  product(num1: 3);
+  product(num1: 3, num2: 5);
 }
 
 // Function
